@@ -115,7 +115,7 @@ namespace rocketmq.Tests
                     await simpleConsumer.Ack(message);
                     recvMsgIdList.Add(message.MessageId);
                 }
-                if (DateTime.Compare(DateTime.UtcNow, now) >= 1 || (recvMsgIdList.Count >= sendNum && sendMsgIdList.Count==sendNum))
+                if (DateTime.Compare(DateTime.UtcNow, now) >= 0 || (recvMsgIdList.Count >= sendNum && sendMsgIdList.Count==sendNum))
                 {
                     break;
                 }
@@ -207,7 +207,7 @@ namespace rocketmq.Tests
                     Console.WriteLine($"Ack trans msg, message =" + message);
                     recvMsgIdList.Add(message.MessageId);
                 }
-                if (DateTime.Compare(DateTime.UtcNow, now) >= 1 || sendMsgIdList.Count==sendNum)
+                if (DateTime.Compare(DateTime.UtcNow, now) >= 0 || sendMsgIdList.Count==sendNum)
                 {
                     break;
                 }
@@ -300,7 +300,7 @@ namespace rocketmq.Tests
                          Console.WriteLine($"not ack trans msg, message =" + message);
                      }
                 }
-                if (DateTime.Compare(DateTime.UtcNow, now) >= 1 || recvMsgIdList.Count==sendNum)
+                if (DateTime.Compare(DateTime.UtcNow, now) >= 0 || recvMsgIdList.Count==sendNum)
                 {
                     break;
                 }

@@ -71,7 +71,7 @@ namespace rocketmq.Tests
             var now = DateTime.UtcNow + TimeSpan.FromSeconds(30);
             while (true)
             {
-                if (DateTime.Compare(DateTime.UtcNow, now) >= 1 || recvMsgIdList.Count >= sendNum)
+                if (DateTime.Compare(DateTime.UtcNow, now) >= 0 || recvMsgIdList.Count >= sendNum)
                 {
                     break;
                 }
@@ -156,7 +156,7 @@ namespace rocketmq.Tests
             var now = DateTime.UtcNow + TimeSpan.FromSeconds(60);
             while (true)
             {
-                if (DateTime.Compare(DateTime.UtcNow, now) >= 1 || recvMsgIdList.Count >= sendNum)
+                if (DateTime.Compare(DateTime.UtcNow, now) >= 0 || recvMsgIdList.Count >= sendNum)
                 {
                     break;
                 }
@@ -248,7 +248,7 @@ namespace rocketmq.Tests
             var now = DateTime.UtcNow + TimeSpan.FromSeconds(120);
             while (true)
             {
-                if (DateTime.Compare(DateTime.UtcNow, now) >= 1 )
+                if (DateTime.Compare(DateTime.UtcNow, now) >= 0 )
                 {
                     break;
                 }
