@@ -24,18 +24,18 @@ namespace rocketmq.Tests
                 {   
                     Logger.Info($"Checker rollback trans msg, messageview={messageView}");
                     Console.WriteLine($"Checker rollback trans msg, messageview={messageView}");
-                    return TransactionResolution.ROLLBACK;
+                    return TransactionResolution.Rollback;
                 }
                 _sendMsgIds.Add(messageView.MessageId);
                 if (_isCommit)
                 {   
                     Logger.Info($"Checker commit trans msg, messageview={messageView}");
                     Console.WriteLine($"Checker commit trans msg, messageview={messageView}");
-                    return TransactionResolution.COMMIT;
+                    return TransactionResolution.Commit;
                 }
                 Logger.Info($"Checker rollback trans msg, messageview={messageView}");
                 Console.WriteLine($"Checker rollback trans msg, messageview={messageView}");
-                return TransactionResolution.ROLLBACK;
+                return TransactionResolution.Rollback;
             }
         }
 

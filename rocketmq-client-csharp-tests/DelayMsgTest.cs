@@ -245,7 +245,7 @@ namespace rocketmq.Tests
                 sendMsgIdList.Add(sendReceipt.MessageId);
             }
 
-            var now = DateTime.UtcNow + TimeSpan.FromSeconds(120);
+            var now = DateTime.UtcNow + TimeSpan.FromSeconds(90);
             while (true)
             {
                 if (DateTime.Compare(DateTime.UtcNow, now) >= 0 )

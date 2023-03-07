@@ -34,7 +34,7 @@ namespace examples
             {
                 Console.WriteLine("Receive transaction check, messageView= "+ messageView);
                 Logger.Info("Receive transaction check, messageId={}", messageView.MessageId);
-                return TransactionResolution.ROLLBACK;
+                return TransactionResolution.Rollback;
             }
         }
 

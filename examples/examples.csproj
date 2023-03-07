@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <ItemGroup>
-    <PackageReference Include="RocketMQ.Client" Version="0.0.7-SNAPSHOT" />
+    <PackageReference Include="RocketMQ.Client" Version="0.0.9-SNAPSHOT" />
     </ItemGroup>
 
     <PropertyGroup>
