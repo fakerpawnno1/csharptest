@@ -1,0 +1,6 @@
+rocketmq-client-csharp-tests/bin
+rocketmq-client-csharp-tests/obj
+examples/bin
+examples/obj
+examples/.idea
+.idea
